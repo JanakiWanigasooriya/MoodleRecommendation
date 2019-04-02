@@ -24,7 +24,7 @@ class block_learnermodeling extends block_base {
 			$text .= html_writer::end_tag('li') . ' ';
 			
 			$text .= html_writer::start_tag('li');
-			$url = new moodle_url('/blocks/learnermodeling/automatic.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
+			$url = new moodle_url('/blocks/learnermodeling/view_automatic.php', array('blockid' => $this->instance->id, 'courseid' => $COURSE->id));
 			$text .= html_writer::link($url, "Build Model- Automatic LM");
 			$text .= html_writer::end_tag('li') . ' ';
 		
